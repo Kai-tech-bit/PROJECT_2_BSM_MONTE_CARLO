@@ -59,4 +59,9 @@ This project implements **closed-form and simulation-based option pricing models
 
 ---
 
+## 📂 Full Quant Report
+Detailed statistical outputs, optimization results, and plots are documented here:  
+[📄 View  Report](https://drive.google.com/file/d/1oAQL7lDL-XIN80-1DxBQjop5OaOS_kWv/view?usp=sharing)
+
+
 
