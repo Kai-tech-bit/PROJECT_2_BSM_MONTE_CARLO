@@ -1,67 +1,21 @@
-# 📉 Black-Scholes Option Pricing & Monte Carlo Simulation for Risk Analysis
+# Black-Scholes and Monte Carlo: Legacy Study
 
-## 📌 Overview
-This project implements **closed-form and simulation-based option pricing models** to evaluate and compare theoretical valuations with stochastic simulation outputs. The work blends **analytical finance** with **numerical methods** to assess pricing accuracy, explore model limitations, and demonstrate extensions toward more realistic market dynamics.
+This repository is retained as an earlier quantitative-finance learning project. It is no longer the primary repository for my option-pricing work.
 
----
+## Current project
 
-## 🎯 Objectives
-- Implement the **Black-Scholes-Merton (BSM)** closed-form pricing formula for European call and put options.
-- Compute **Greeks** (Δ, Γ, Θ, 𝜈, ρ) using:
-  - **Closed-form analytical expressions**
-  - **Monte Carlo simulation with finite-difference estimation**
-- Perform **Monte Carlo path simulations** for underlying asset price dynamics.
-- Compare pricing accuracy between analytical and simulation-based methods.
-- Explore **model shortcomings** and visualise:
-  - Volatility smile
-  - Volatility skew
-  - Simulated paths from **Heston** and **Jump-Diffusion** models.
+For the consolidated study, see:
 
----
+[Monte Carlo Option Pricing and Sensitivity Validation](https://github.com/Kai-tech-bit/Monte-Carlo-Option-Pricing-And-Sensitivity-Validation)
 
-## 🛠️ Tech Stack
-- **Python** — Model implementation & simulations
-- **Libraries**: `numpy`, `scipy`, `matplotlib`, `seaborn`, `pandas`
-- **Mathematical Models**: Black-Scholes-Merton, Geometric Brownian Motion, Heston, Jump-Diffusion
+The consolidated project brings together European pricing, variance reduction, Greek diagnostics, arithmetic Asian options, early-exercise experiments, and discretely monitored barrier options, with saved numerical results and reproducibility documentation. Access to that repository depends on its visibility and your permissions.
 
----
+## Historical scope
 
-## 📊 Key Analysis Steps
-1. **Closed-Form Pricing**  
-   - Black-Scholes formula for European calls & puts.
-   - Inputs: Spot price (S), Strike (K), Time to maturity (T), Volatility (σ), Risk-free rate (r).
+This earlier project explored Black-Scholes-Merton pricing, Monte Carlo simulation, sensitivities, and illustrative model extensions. Its previous documentation also discussed Heston and jump-diffusion examples; those examples should not be assumed to have been migrated into the consolidated GBM study.
 
-2. **Monte Carlo Pricing**  
-   - Simulate thousands of underlying price paths.
-   - Apply risk-neutral valuation to estimate option prices.
-   - Use **Law of Large Numbers** to improve convergence.
+The code and supporting files remain here for historical reference. This notice does not independently validate the older implementation or its numerical claims.
 
-3. **Greeks Calculation**  
-   - **Closed-form**: Direct differentiation of BSM formulas.
-   - **Simulation**: Finite difference approach using perturbed payoffs.
+[Original report](https://drive.google.com/file/d/1oAQL7lDL-XIN80-1DxBQjop5OaOS_kWv/view?usp=sharing)
 
-4. **Comparative Analysis**  
-   - Analytical vs Simulation price differences.
-   - Impact of number of simulations & volatility changes.
-
-5. **Model Shortcomings**  
-   - Volatility smile & skew phenomena.
-   - Market frictions not captured by BSM assumptions.
-   - Extensions using stochastic volatility (Heston) & jumps.
-
----
-
-## 📈 Results Summary
-- **Monte Carlo estimates** converge to closed-form prices with sufficiently large path counts.
-- **Finite-difference Greeks** closely match analytical results but show higher variance for small simulation sizes.
-- **Volatility smile and skew** highlight BSM’s inability to capture implied volatility structures observed in real markets.
-- **Heston and Jump-Diffusion models** produce more realistic price dynamics.
-
----
-
-## 📂 Full Quant Report
-Detailed statistical outputs, optimization results, and plots are documented here:  
-[📄 View  Report](https://drive.google.com/file/d/1oAQL7lDL-XIN80-1DxBQjop5OaOS_kWv/view?usp=sharing)
-
-
-
+The previous README remains available in Git history.
